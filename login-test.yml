@@ -1,0 +1,23 @@
+config:
+  target: "http://127.0.0.1:8000"
+  phases:
+    - duration: 10
+      arrivalRate: 1
+
+scenarios:
+  - name: Login Laravel Breeze sin JS
+    flow:
+      - get:
+          url: "/login"
+          capture:
+            - regexp: '<meta name="csrf-token" content="([^"]+)"'
+              as: "csrfToken"
+
+      - post:
+          url: "/login"
+          headers:
+            content-type: application/x-www-form-urlencoded
+          form:
+            _token: "{{ csrfToken }}"
+            email: "admin@example.com"
+            password: "password"
