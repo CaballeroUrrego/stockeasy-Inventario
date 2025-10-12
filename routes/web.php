@@ -12,6 +12,19 @@ use App\Http\Controllers\VendedorDashboardController;
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
+
+             .-""""-.
+             / -   -  \
+            |  .-. .-  |
+            |  \o| |o/ |
+            \     ^    /
+             '.  --- .'
+               '-._.-'
+             __/  |  \__
+           .`   \_|_/   `.
+          /  .-----------. \
+         /  /  /  |  \  \  \
+        /__/__/   |   \__\__\
 */
 
 // Ruta principal
@@ -58,4 +71,4 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/ventas', [AdminController::class, 'ventas'])->name('admin.ventas');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
