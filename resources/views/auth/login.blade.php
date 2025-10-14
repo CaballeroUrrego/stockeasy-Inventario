@@ -6,64 +6,15 @@
         <!-- Font Awesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
         <link rel="icon" href="/assents/logo/LogoStockEase.svg" />
-
-        <style>
-            /* Estilos personalizados para el formulario */
-            body {
-                background: linear-gradient(to top, #f3f4f6, #ffffff);
-                font-family: "Arial", sans-serif;
-                color: #333;
-            }
-
-            .card {
-                background: #fff;
-                border: none;
-            }
-
-            /* Título principal */
-            h1 {
-                color: #7e57c2;
-                font-weight: bold;
-            }
-
-            /* Inputs */
-            .form-control {
-                border-radius: 10px;
-                border: 1px solid #ccc;
-            }
-
-            /* Botones */
-            .btn-primary {
-                background-color: #7e57c2;
-                border: none;
-            }
-
-            .btn-primary:hover {
-                background-color: #5e3fa4;
-            }
-
-            .btn-outline-primary {
-                color: #7e57c2;
-                border-color: #7e57c2;
-            }
-
-            .btn-outline-primary:hover {
-                background-color: #7e57c2;
-                color: #fff;
-            }
-
-            /* Enlace de contraseña olvidada */
-            .text-muted {
-                font-size: 0.9rem;
-            }
-        </style>
+        <!-- CSS personalizado -->
+        <link rel="stylesheet" href="{{ asset('css/login.css') }}">
     </head>
 
     <body>
         <div class="container d-flex justify-content-center align-items-center vh-100">
-            <div class="card shadow-lg p-4" style="width: 100%; max-width: 400px; border-radius: 20px">
+            <div class="p-4 shadow-lg card" style="width: 100%; max-width: 400px; border-radius: 20px">
 
-                <h1 class="text-center mb-4" style="color: #7e57c2; font-weight: bold;">StockEase</h1>
+                <h1 class="mb-4 text-center" style="color: #7e57c2; font-weight: bold;">StockEase</h1>
 
                 <!-- Formulario -->
                 <form method="POST" action="{{ route('login') }}">
@@ -75,7 +26,7 @@
                         </label>
                         <input type="email" id="email" name="email" class="form-control" placeholder="Ingresa tu correo electrónico" value="{{ old('email') }}" required autofocus />
                         @error('email')
-                            <div class="text-danger mt-2">{{ $message }}</div>
+                            <div class="mt-2 text-danger">{{ $message }}</div>
                         @enderror
                     </div>
 
@@ -86,19 +37,19 @@
                         </label>
                         <input type="password" id="password" name="password" class="form-control" placeholder="Ingresa tu contraseña" required />
                         @error('password')
-                            <div class="text-danger mt-2">{{ $message }}</div>
+                            <div class="mt-2 text-danger">{{ $message }}</div>
                         @enderror
                     </div>
 
                     <!-- Recordarme -->
-                    <div class="form-check mb-3">
+                    <div class="mb-3 form-check">
                         <input type="checkbox" id="remember_me" name="remember" class="form-check-input" />
                         <label for="remember_me" class="form-check-label">Recuérdame</label>
                     </div>
 
                     <!-- Botón Iniciar Sesión -->
                     <div class="mb-3">
-                        <button type="submit" class="btn btn-primary w-100 py-2" style="border-radius: 50px">Inicia sesión</button>
+                        <button type="submit" class="py-2 btn btn-primary w-100" style="border-radius: 50px">Inicia sesión</button>
                     </div>
 
                     <!-- Enlace de contraseña olvidada -->
