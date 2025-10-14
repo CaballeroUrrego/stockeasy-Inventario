@@ -134,7 +134,7 @@
         </form>
     </div>
 
-    <!-- Contenido Principal -->
+    <!-- Solo editalo sustraelo y hacerlo lo mismo que hiciste con la carpeta css/login.css Caballero Urrego Estuvo aca no me jodan  -->
     <div class="content">
         <div class="logo-container">
             <div class="text-center mb-4">
