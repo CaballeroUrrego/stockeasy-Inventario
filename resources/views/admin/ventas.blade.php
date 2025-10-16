@@ -5,7 +5,7 @@
     <h2>Todas las Ventas</h2>
 
     <!-- Botón para generar PDF -->
-    <button id="generate-pdf" class="btn btn-primary mb-3">Generar PDF</button>
+    <button id="generate-pdf" class="mb-3 btn btn-primary">Generar PDF</button>
 
     <table class="table" id="ventas-table">
         <thead>
