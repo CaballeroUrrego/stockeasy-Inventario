@@ -46,3 +46,19 @@ h1 {
 .text-muted {
     font-size: 0.9rem;
 }
+
+/* Estilos extraídos desde login.blade.php */
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.login-title {
+    color: #7e57c2;
+    font-weight: 700;
+}
+
+.btn-login {
+    border-radius: 50px;
+}

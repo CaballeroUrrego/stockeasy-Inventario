@@ -13,7 +13,7 @@ return new class extends Migration {
   /\_/\
  ( o.o )
   > ^ <
-  Mi gato Lucius miau amar mucho 🐱
+  Mi gato Lucius miau amar mucho  puto el que lo lea 🐱
  */
 
     public function up(): void
