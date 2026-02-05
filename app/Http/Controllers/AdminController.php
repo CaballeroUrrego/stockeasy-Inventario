@@ -31,7 +31,7 @@ class AdminController extends Controller
         $totalProveedores = Proveedor::count();
 
         return view('admin.dashboard', compact(
-            'productosVendidos', 
+            'productosVendidos',
             'totalVentas',
             'productosBajoStock',
             'totalProductos',
