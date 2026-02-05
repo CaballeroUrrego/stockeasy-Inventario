@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h1 class="mb-4">Administración de Productos</h1>
+    <h1 class="text-center">Administración de Productos</h1>
     <button class="mb-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregar">Agregar Producto</button>
     <button class="mb-3 btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalAgregarCategoria">Agregar Categoría</button>
 
