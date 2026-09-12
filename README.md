@@ -130,7 +130,8 @@ php artisan serve
 npm run dev
 npm run build
 ```
-
+## laragon
+https://www.filepuma.com/es/download/laragon_7.0.6-45264/
 ## Licencia
 
 Este proyecto se entrega como una aplicación de ejemplo para gestión de inventario y ventas.
